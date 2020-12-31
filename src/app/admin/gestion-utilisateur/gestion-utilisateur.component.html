@@ -1,0 +1,14 @@
+ <div class="row">
+    <div class="col-sm-2">
+
+      <div class="list-group shadow-lg">
+        <button type="button" class="list-group-item list-group-item-action active" [routerLink]="['profil']">Profil</button>
+        <button type="button" class="list-group-item list-group-item-action " [routerLink]="['user']"><i class="fa fa-user" aria-hidden="true"></i>Utilisateurs</button>
+      </div>
+    </div>
+    <div class="col-sm-9 border border-light mt-5">
+
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>

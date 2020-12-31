@@ -1,0 +1,25 @@
+<div class="container">
+  <button type="button" class="btn btn-outline-primary mt-3" [routerLink]="['add']"> <i class="fa fa-plus"></i> ajouter un groupe de competence</button>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="row mb-3">
+    <div class="col" *ngFor="let grpCompetence of tabGrpCompetence">
+      <div class="card shadow-lg" style="width: 18rem;">
+        <div class="card-header bg-primary">
+          <h3>libelle <i class="fas fa-trash-alt float-right"></i> <i class="fas fa-edit float-right"></i>
+          </h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer bg-transparent border-primary">
+          <div class="card-header">competence</div>
+          <div class="card-header">tags</div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
